@@ -12,3 +12,204 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+body {
+  background-color: black;
+  color: white;
+}
+.top-bar {
+  padding: 70px 0px 60px 0px;
+
+}
+.tp-ag {
+  font-family: Roboto;
+  
+  font-weight: 700;
+  
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.f-16 {
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.f-14 {
+  font-size: 14px;
+  line-height: 16.41px;
+}
+.f-24 {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: justify;
+}
+.f-73 {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 115px;
+}
+.btn-join {
+  border: 1px solid white;
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px 50px;
+}
+.title {
+  font-family: Saira Stencil One;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 151px;
+  letter-spacing: 0em;
+
+}
+.content {
+  font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+text-align: justify;
+}
+@font-face {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 700, bold;
+  font-display: swap;
+  src: url('./fonts/SairaStencilOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700, bold;
+  font-display: swap;
+  src: url('./fonts/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700, bold;
+  font-display: swap;
+  src: url('./fonts/RobotoMono-Regular.ttf');
+}
+
+.saira-stencil-one {
+  font-family: 'Saira Stencil One';
+}
+
+.roboto {
+  font-family: 'Roboto';
+}
+.roboto-mono {
+  font-family: 'Roboto Mono';
+}
+.nft {
+  padding-top: 80px;
+  height: 564px;
+}
+.nft-content {
+  padding-right: 50px;
+}
+.nft-common {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.27%, rgba(127, 0, 227, 0.3) 100%);
+  border: 9px solid #7F00E3;
+  border-radius: 10px;
+}
+.nft-medic {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.27%, rgba(0, 227, 159, 0.3) 100%);
+  border: 9px solid #00E39F;
+  border-radius: 10px;
+}
+.nft-engineer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.27%, rgba(0, 36, 227, 0.3) 100%);
+  border: 9px solid #0024E3;
+  border-radius: 10px;
+}
+.nft-scientists {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.27%, rgba(0, 227, 227, 0.3) 100%);
+  border: 9px solid #00E3E3;
+  border-radius: 10px;
+}
+.nft-soilder {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.27%, rgba(0, 227, 9, 0.3) 100%);
+  border: 9px solid #00E309;
+  border-radius: 10px;
+}
+.nft-commander {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.27%, rgba(227, 196, 0, 0.3) 100%);
+  border: 9px solid #E3C400;
+  border-radius: 10px;
+}
+.nft-thumb {
+  background: linear-gradient(180deg, rgba(186, 186, 186, 0.2) 0%, rgba(186, 186, 186, 0) 100%);
+  border-radius: 10px;
+  width: 173px;
+  height: 239px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.swiper-slide-thumb-active .nft-thumb-common {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #7F00E3 100%);
+border-radius: 10px;
+border: 9px solid #7F00E3;
+}
+.swiper-slide-thumb-active .nft-thumb-medic {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00E39F 100%);
+  border-radius: 10px;
+  border: 9px solid #00E39F;
+}
+.swiper-slide-thumb-active .nft-thumb-engineer {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #0024E3 100%);
+  border-radius: 10px;
+  border: 9px solid #0024E3;
+}
+.swiper-slide-thumb-active .nft-thumb-scientist {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00E3E3 100%);
+border-radius: 10px;
+border: 9px solid #00E3E3;
+}
+.swiper-slide-thumb-active .nft-thumb-soilder {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00E309 100%);
+  border-radius: 10px;
+  border: 9px solid #00E309 ;
+}
+.swiper-slide-thumb-active .nft-thumb-commander {  
+
+  border: 9px solid #E3C400;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E3C400 100%);
+  border-radius: 10px;
+
+}
+.leader-item {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 850px;
+  width: 850px;
+}
+.leader-item img {
+  height: 80%;
+}
+.leader-thumb {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+.swiper-slide-thumb-active .leader-thumb {  
+
+  border: 9px solid #E3C400;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #E3C400 100%);
+  border-radius: 10px;
+
+}
+.swiper-button-prev, .swiper-button-next {
+  color: white!important;
+}
+.swiper-wrapper {
+  align-items: center;
+}

@@ -5,6 +5,8 @@ import {Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Layout from './layout/index';
+import Home from './pages/home/index';
+
 function App() {
   
   
@@ -13,7 +15,7 @@ function App() {
           <Switch>
             <Layout exact path="/" name="Home" component={Home} />
           </Switch>
-    </BrowserRouter>
+      </BrowserRouter>
     
   );
 }
