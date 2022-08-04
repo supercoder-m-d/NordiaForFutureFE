@@ -1,0 +1,10 @@
+{
+  "short_name": "Nordia For Future",
+  "name": "Nordia For Future",
+  "icons": [
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

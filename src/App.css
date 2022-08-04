@@ -13,13 +13,26 @@
   }
 }
 body {
-  background-color: black;
+  /* background-color: black; */
   color: white;
+  /* padding-left: 50px!important; */
+  /* padding-right: 50px!important; */
 }
 .top-bar {
-  padding: 70px 0px 60px 0px;
+  padding: 70px 50px 60px 50px;
+  color: black;
 
 }
+.top-bar.dark {
+  color: white;
+}
+.top-bar .btn {
+  color: black;
+}
+.top-bar.dark .btn {
+  color:white;
+}
+
 .tp-ag {
   font-family: Roboto;
   
@@ -31,7 +44,7 @@ body {
 }
 .f-16 {
   font-size: 16px;
-  line-height: 18.75px;
+  line-height: 21px;
 }
 .f-14 {
   font-size: 14px;
@@ -45,6 +58,11 @@ body {
   line-height: 32px;
   text-align: justify;
 }
+.f-40 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 53px;
+}
 .f-73 {
   font-family: 'Saira Stencil One';
   font-style: normal;
@@ -53,9 +71,19 @@ body {
   line-height: 115px;
 }
 .btn-join {
+  border: 1px solid black;
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px 50px;
+  background: black;
+  color: white!important;
+
+}
+.top-bar.dark .btn-join {
   border: 1px solid white;
   border-radius: 0px 0px 15px 15px;
   padding: 15px 50px;
+  color: white;
+  background: initial;
 }
 .title {
   font-family: Saira Stencil One;
@@ -95,7 +123,9 @@ text-align: justify;
   font-display: swap;
   src: url('./fonts/RobotoMono-Regular.ttf');
 }
-
+.main-content {
+  padding: 0px 50px;
+}
 .saira-stencil-one {
   font-family: 'Saira Stencil One';
 }
@@ -212,4 +242,326 @@ border: 9px solid #00E3E3;
 }
 .swiper-wrapper {
   align-items: center;
+}
+.background {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: auto;
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.home-bg {
+  background-image: url('./images/bgNew.png');
+}
+.team-bg {
+  background-image: url('./images/teamBg.png');
+}
+.roadmap-bg {
+  background-image: url('./images/roadmapbg.png');;
+}
+.team-image {
+  right: 0px;
+  z-index: -1;
+}
+.nft-bg {
+  background: black;
+}
+
+.home-image {
+  right: 0px;
+  z-index: -1;
+}
+.about-image {
+  left: 0px;
+  z-index: -1;
+}
+
+.welcome-text {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 101px;
+  letter-spacing: 0.545em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+.norida-text {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 110px;
+  line-height: 173px;
+  letter-spacing: 0.54em;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.home-subtitle1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+.btn-no-bg {
+  background: initial;
+  border: none;
+}
+
+.footer {
+  background: rgba(101, 0, 106, 0.38);
+  height: 148px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.vertical-line {
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  align-self: center;
+}
+
+.about-bg {
+  background-image: url('./images/aboutbg.png');
+}
+.team-content {
+  max-width: 750px;
+}
+
+.team-member {
+  background-color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 180px;
+
+}
+.member-profile {
+  background-color: white;
+  height: 210px;
+}
+.member-role {
+  font-family: 'Prompt';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 15px;
+text-align: justify;
+text-transform: uppercase;
+}
+.memeber-name {
+  background-color: black;
+  border: 1px solid #000000;
+  color: white;
+  font-family: 'Prompt';
+font-style: normal;
+font-weight: 700;
+font-size: 10px;
+line-height: 15px;
+text-align: justify;
+  letter-spacing: 0.505em;
+}
+.member-detail {
+  display: none;
+  background-color: black;
+  border: 1px solid #000000;
+  color: white;
+  font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 11px;
+text-align: center;
+position: absolute;
+top: 227px;
+z-index: 999;
+}
+.member-link {
+  color: black;
+  background: white;
+  width: 100%;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+
+}
+.team-member:hover .memeber-name {
+  letter-spacing: normal;  
+}
+.team-member:hover .member-detail {
+  display: block;
+}
+.roadmap-item {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  position: relative;
+  min-height: 330px;
+  padding: 15px 10px;
+  text-align: left;
+}
+.roadmap-number {
+  position: absolute;
+  right: 10px;
+  bottom: 15px
+}
+.roadmap-img {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.roadmap-team-title {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 101px;
+  text-transform: uppercase;
+}
+.roadmap-team-subtitle {
+  font-family: 'Saira Stencil One';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 41px;
+text-transform: uppercase;
+}
+.roadmap-nft-title {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 118px;
+  text-transform: uppercase;
+}
+.roadmap-nft-subtitle {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 57px;
+  text-transform: uppercase;
+  
+}
+.roadmap-token-title {
+  font-family: 'Saira Stencil One';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 57px;
+/* identical to box height */
+
+text-transform: uppercase;
+}
+.roadmap-p2e-title {
+  font-family: 'Saira Stencil One';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 76px;
+text-transform: uppercase;
+}
+.roadmap-p2e-subtitle {
+  font-family: 'Saira Stencil One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 38px;
+text-transform: uppercase;
+}
+.roadmap-tangible-subtitle {
+  font-family: 'Saira Stencil One';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 79px;
+text-transform: uppercase;
+}
+.rm-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+padding: 15px;
+}
+.btn-rm-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.popup-title {
+  font-family: 'Saira Stencil One';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 76px;
+/* identical to box height */
+
+text-transform: uppercase;
+}
+.popup-content {
+  font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 32px;
+text-align: justify;
+}
+.popup-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.popup-content {
+  max-width: 900px;
+  font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 32px;
+text-align: justify;
+}
+.popup-content .subtitle {
+  font-weight: 700;;
+}
+.status {
+  padding: 5px 15px;
+  border-radius: 5px;
+color: white;
+}
+.status-success {
+  background: #17A300;
+
+}
+.status-updating {
+  background:#A39C00;
+}
+.status-ready{
+  background: #00A38F;
+}
+.status-drawing {
+  background: #A3007F;
+}
+
+.status-plan {
+  background: #A30000;
+}
+.status-processing {
+  background: #2A00A3;
 }
