@@ -5,7 +5,7 @@ import LOGO from '../images/logo.png';
 const NavBar = (props) => {    
     const history = useHistory();
     const location = useLocation();
-    const isDark = (location.pathname == '/about' || location.pathname == '/team' || location.pathname == '/roadmap')? false: true;
+    const isDark = (location.pathname == '/about' || location.pathname == '/team' || location.pathname == '/roadmap' || location.pathname == '/nft')? false: true;
 
     const home = () => {
         history.push('/');

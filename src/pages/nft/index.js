@@ -39,7 +39,7 @@ const NFT = (props) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const [thumbsSwiper2, setThumbsSwiper2] = useState(null);
     return (
-        <>
+        <div className='main-content text-black'>
             <div className={`background nft-bg`}></div>
             <div className='d-flex align-items-center justify-content-center w-100 title pb-5'>
                 Scenario
@@ -510,7 +510,7 @@ const NFT = (props) => {
                     </div>                    
                 </SwiperSlide>
             </Swiper>
-        </>
+        </div>
     )
 }
 export default NFT;

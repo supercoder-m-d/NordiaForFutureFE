@@ -268,9 +268,7 @@ border: 9px solid #00E3E3;
   right: 0px;
   z-index: -1;
 }
-.nft-bg {
-  background: black;
-}
+
 
 .home-image {
   right: 0px;
@@ -564,4 +562,13 @@ color: white;
 }
 .status-processing {
   background: #2A00A3;
+}
+/* .nft-bg {
+  background: black;
+}
+.nft-bg {
+  background-image: url('./images/teamBg.png');
+} */
+.nft-bg {
+  background-image: url('./images/aboutbg.png');
 }
