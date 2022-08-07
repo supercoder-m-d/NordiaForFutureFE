@@ -73,7 +73,8 @@ body {
 .btn-join {
   border: 1px solid black;
   border-radius: 0px 0px 15px 15px;
-  padding: 15px 50px;
+  padding: 15px 10px;
+  min-width: 150px;
   background: black;
   color: white!important;
 
@@ -137,11 +138,14 @@ text-align: justify;
   font-family: 'Roboto Mono';
 }
 .nft {
-  padding-top: 80px;
-  height: 564px;
+  padding-top: 40px;
+  /* height: 564px; */
 }
 .nft-content {
   padding-right: 50px;
+}
+.nft-item {
+  width: 350px;
 }
 .nft-common {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 36.27%, rgba(127, 0, 227, 0.3) 100%);

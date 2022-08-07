@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import { FreeMode, Navigation, Thumbs } from "swiper";
-
+import useResizeAware from 'react-resize-aware';
 
 import NFTCOMMON from '../../images/Common.png';
 import NFTMEDIC from '../../images/Medic.png';
@@ -38,6 +38,7 @@ const NFT = (props) => {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     const [thumbsSwiper2, setThumbsSwiper2] = useState(null);
+    const [resizeListener, sizes] = useResizeAware();
     return (
         <div className='main-content text-black'>
             <div className={`background nft-bg`}></div>
@@ -45,6 +46,7 @@ const NFT = (props) => {
                 Scenario
             </div>
             <div className='content'>
+            {resizeListener}
                 <p className='pb-2'>As the world approaches the last corner of human troubles towards the last half of the 21st century, the unstoppable population growth, the difficulties in finding food, the highest course of unemployment; It takes away the will to live in people slowly but almost permanently.</p>
 
                 <p className='pb-2'>Just as the pandemic that started in 2020 caught people in all four arms, what is happening now is strong and cruel enough to make humanity look for those difficult years. In the past, experts who wanted to find a solution to unemployment had a hard time finding people for a job to be produced, and a lot. Of course, it is not easy, after all, it is a community of people; especially the working class is almost gone. The fact that countries have put their economies in order and the difficulty in reaching basic foods for large masses is almost over, yes, but a bigger challenge is on the world's agenda. Attempts to be produced with human power have begun to fail. You ask why? because it is now more difficult to find a driver, construction worker, cleaner, sales consultant, administrative assistant, transporter, farmer than it is to jump a camel over a ditch. Experts, managers, scientists do not even include other issues on their agendas. In the course of all this chaos and in this period when the word 'hope' began to be forgotten, 'Nordia' rolls up its sleeves to serve humanity with the humanoid robots it has developed.
@@ -85,9 +87,9 @@ const NFT = (props) => {
                 <SwiperSlide>
                     <div className='d-flex w-100 nft-common nft'>
                         <div className='d-flex align-items-end'>
-                            <img src={NFTCOMMON} alt='nft-item'/>
+                            <img src={NFTCOMMON} className='nft-item' alt='nft-item'/>
                         </div>
-                        <div className='flex-fill nft-content'>
+                        <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Common</p>
                             <p className='f-24'>
                             They are the ones who have the most contact with normal people. They are found among the people as workers/unemployed. Some are abandoned and live on the streets. Others serve people. They serve in many areas such as babysitting, waitress, bus driver. Some have started a revolt. It's dangerous to see an angry Nordia walking down the street. Make sure to be friends.
@@ -100,7 +102,7 @@ const NFT = (props) => {
                         <div className='d-flex align-items-end'>
                             <img src={NFTMEDIC} alt='nft-item'/>
                         </div>
-                        <div className='flex-fill nft-content'>
+                        <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Medic</p>
                             <p className='f-24'>
                             Doctors are divided into two missions at Nordia. Some serve people, while others serve Nordias. They were produced less in number than the Commons. Error rates are almost zero. They are much more sensitive in surgery than humans. This is a tremendous event for healthcare. Although there are few exceptions, it does not go unnoticed.
@@ -113,7 +115,7 @@ const NFT = (props) => {
                         <div className='d-flex align-items-end'>
                             <img src={NFTENGINEER} alt='nft-item'/>
                         </div>
-                        <div className='flex-fill nft-content'>
+                        <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Engineer</p>
                             <p className='f-24'>
                             Working areas are very wide. Engineers created all the structures of Nordia Corporation. They have labor in factories opened all over the world. They are quite intelligent and planned. Trust me, you don't want to run into their bad parts. They became the focus of attention by the public more than health workers. Indispensable products of big companies.
@@ -126,7 +128,7 @@ const NFT = (props) => {
                         <div className='d-flex align-items-end'>
                             <img src={NFTSCIENTIST} alt='nft-item'/>
                         </div>
-                        <div className='flex-fill nft-content'>
+                        <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Scientist</p>
                             <p className='f-24'>
                             The smartest products developed by Nordia company. They broke new ground in the world on issues such as cancer treatments, Global warming, Fossil fuels, Atmosphere conservation. They can serve multiple purposes. If you have a company, you can buy it and use it. It is quite an expensive product. But it pays off in the end.
@@ -139,7 +141,7 @@ const NFT = (props) => {
                         <div className='d-flex align-items-end'>
                             <img src={NFTSoilder} alt='nft-item'/>
                         </div>
-                        <div className='flex-fill nft-content'>
+                        <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Soilder</p>
                             <p className='f-24'>
                             We are talking about Nordia military forces... An indispensable part in large navies. They can serve in the air, land and naval forces. Some developers say it can even be used in space. Nordia company is silent about this. Non-trembling hands, unmistakable bullets, not getting tired, not getting hungry and not being thirsty... It is a product that every country wants to see in their army. Unless of course he pulls a gun on you.
@@ -152,7 +154,7 @@ const NFT = (props) => {
                         <div className='d-flex align-items-end'>
                             <img src={NFTCOMMANDER} alt='nft-item'/>
                         </div>
-                        <div className='flex-fill nft-content'>
+                        <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Commander</p>
                             <p className='f-24'>
                             The most dangerous commanders on earth. These products are so powerful and smart that no country has used them even against their enemies. In a movie, they used a saying that powerful weapons bring peace. Commanders show the accuracy of these words. Their production numbers are very low and they are very expensive.
@@ -164,7 +166,7 @@ const NFT = (props) => {
             <Swiper
                 onSwiper={setThumbsSwiper}
                 spaceBetween={30}
-                slidesPerView={6}
+                slidesPerView={parseInt(sizes.width / 180) > 6? 6: parseInt(sizes.width / 180)}
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
