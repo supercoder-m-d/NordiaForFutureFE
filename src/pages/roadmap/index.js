@@ -7,8 +7,8 @@ const RoadMap = (props) => {
     return (
         <div className='saira-stencil-one main-content d-flex flex-wrap flex-lg-nowrap text-black position-relative'>
             <div className={`background roadmap-bg`}></div>
-            <div className='d-flex w-100 flex-nowrap p-2'>
-                <div className='d-flex flex-column me-2 w-100'>
+            <div className='d-flex w-100 flex-wrap flex-md-nowrap p-2'>
+                <div className='d-flex flex-column m-2 w-100'>
                     <div className='flex-fill pb-2'>
                         <div className='btn roadmap-item' onClick={() => {setMode(1);}}>
                             <div className='f-40  text-uppercase'>Vision</div>
@@ -26,7 +26,7 @@ const RoadMap = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className='d-flex w-100 ms-2'>
+                <div className='d-flex w-100 m-2'>
                     <div className='btn roadmap-item' onClick={() => {setMode(3);}}>
                         <div className='roadmap-nft-title'>NFT</div>
                         <div className='roadmap-nft-subtitle'>Launch</div>
@@ -58,7 +58,7 @@ const RoadMap = (props) => {
                         <div className='roadmap-token-title'>Tangible</div>
                         <div className='roadmap-tangible-subtitle'>Works</div>
                         <img src={'/images/t-shirt.png'} className='roadmap-img' alt='roadmap-img'/>
-                        <div className='roadmap-number f-40 text-uppercase'>06</div>
+                        <div className='roadmap-number f-40 text-uppercase'>05</div>
                     </div>
                 </div>
             </div>

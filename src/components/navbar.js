@@ -1,10 +1,12 @@
 import React, {useCallback, useEffect, useState} from 'react';
+import { BrowserView, MobileView } from 'react-device-detect';
 import { useHistory, useLocation } from 'react-router-dom';
 
 import LOGO from '../images/logo.png';
 const NavBar = (props) => {    
     const history = useHistory();
     const location = useLocation();
+    const [menu, setMenu] = useState(false);
     const isDark = (location.pathname == '/about' || location.pathname == '/team' || location.pathname == '/roadmap' || location.pathname == '/nft')? false: true;
 
     const home = () => {
@@ -22,13 +24,16 @@ const NavBar = (props) => {
     const roadmap = () => {
         history.push('/roadmap');
     }
+    const showMenu = () => {
+        setMenu(true);
+    }
 
     return (
-        <div className={`d-flex justify-content-between top-bar roboto ${!!isDark? 'dark': ''}`}>
+        <div className={`d-flex justify-content-between top-bar align-items-center w-100 roboto ${!!isDark? 'dark': ''}`}>
             <div className='logo flex-fill'>
                 <a href="/"><img src={`/images/${isDark? 'White_Logo.png': 'DarkLogo.png'}`} alt='logo'/></a>
             </div>
-            <div className='d-flex align-items-center flex-fill justify-content-between'>
+            <div className='d-flex align-items-center flex-fill justify-content-between menus'>
                 <div className='btn tp-ag f-16' onClick={home} >HOME</div>
                 <div className='btn tp-ag f-16' onClick={team}>TEAM</div>
                 <div className='btn tp-ag f-16' onClick={about}>ABOUT</div>
@@ -36,7 +41,24 @@ const NavBar = (props) => {
                 <div className='btn tp-ag f-16' onClick={roadmap}>ROADMAP</div>
                 <div className='btn btn-join f-14'>
                     <img src="/images/world.png" width={'15px'} height={'15px'} style={{marginTop: '2px', marginRight: '5px'}} alt='join-icon'/>JOIN US</div>
-            </div>                
+            </div>     
+            <div className='btn menu-icon' onClick={showMenu}>
+                <i class="fas fa-bars"></i>
+            </div>      
+           {menu && <div className='d-flex flex-column menu-list'>
+                    <div className='text-end my-2'>
+                        <div className='btn' onClick={() => {setMenu(false);}}><i class="fas fa-times"></i></div>
+                    </div>
+                    <div className='btn tp-ag f-16 my-2' onClick={home} >HOME</div>
+                    <div className='btn tp-ag f-16 my-2' onClick={team}>TEAM</div>
+                    <div className='btn tp-ag f-16 my-2' onClick={about}>ABOUT</div>
+                    <div className='btn tp-ag f-16 my-2' onClick={nft}>NFT</div>
+                    <div className='btn tp-ag f-16 my-2' onClick={roadmap}>ROADMAP</div>
+                    <div className='btn btn-join f-14 my-2'>
+                        <img src="/images/world.png" width={'15px'} height={'15px'} style={{marginTop: '2px', marginRight: '5px'}} alt='join-icon'/>JOIN US
+                    </div>
+                    
+            </div>   }  
         </div>
     )
 }

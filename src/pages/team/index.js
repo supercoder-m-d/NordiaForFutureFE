@@ -66,7 +66,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             </div>
                         </div>
                     </div>
-                    <div className='d-flex justify-content-center py-2'>
+                    <div className='d-flex justify-content-center flex-wrap py-2'>
                         <div className='team-member position-relative'>
                             <div className='member-profile d-flex flex-column justify-content-between'>
                                 <div className='member-role pt-1 px-1'>DESIGNER - GAME DEVELOPER</div>
@@ -145,9 +145,9 @@ We will build the future together. Nordia needs every single member. We will exp
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
 
-                    <div className='d-flex justify-content-center py-2'>
+                    {/* <div className='d-flex justify-content-center py-2'> */}
                         <div className='team-member position-relative'>
                             <div className='member-profile d-flex flex-column justify-content-between'>
                                 <div className='member-role pt-1 px-1'>DESIGNER</div>
@@ -223,9 +223,9 @@ They also design the characters and bodies of the leaders. Even we can't disting
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    {/* </div> */}
 
-                    <div className='d-flex justify-content-center py-2'>
+                    {/* <div className='d-flex justify-content-center py-2'> */}
                         <div className='team-member position-relative'>
                             <div className='member-profile d-flex flex-column justify-content-between'>
                                 <div className='member-role pt-1 px-1'>SOCIAL MEDIA EXPERT</div>

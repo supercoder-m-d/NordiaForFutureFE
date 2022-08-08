@@ -82,7 +82,7 @@ body {
 .top-bar.dark .btn-join {
   border: 1px solid white;
   border-radius: 0px 0px 15px 15px;
-  padding: 15px 50px;
+  padding: 15px 10px;
   color: white;
   background: initial;
 }
@@ -143,6 +143,7 @@ text-align: justify;
 }
 .nft-content {
   padding-right: 50px;
+  padding-left: 20px;
 }
 .nft-item {
   width: 350px;
@@ -276,6 +277,7 @@ border: 9px solid #00E3E3;
 
 .home-image {
   right: 0px;
+  bottom: 0px;
   z-index: -1;
 }
 .about-image {
@@ -319,15 +321,18 @@ border: 9px solid #00E3E3;
 
 .footer {
   background: rgba(101, 0, 106, 0.38);
-  height: 148px;
+  min-height: 148px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 }
+.footer-item {
+  min-width: 150px;
+}
 .vertical-line {
   width: 1px;
-  height: 100%;
+  min-height: 80px;
   background-color: #fff;
   align-self: center;
 }
@@ -336,15 +341,13 @@ border: 9px solid #00E3E3;
   background-image: url('./images/aboutbg.png');
 }
 .team-content {
-  max-width: 750px;
+  max-width: 800px;
 }
 
 .team-member {
   background-color: black;
-  margin-left: 5px;
-  margin-right: 5px;
   width: 180px;
-
+  margin: 10px 5px;
 }
 .member-profile {
   background-color: white;
@@ -575,4 +578,103 @@ color: white;
 } */
 .nft-bg {
   background-image: url('./images/aboutbg.png');
+}
+
+@media (max-width: 1280px) {
+  .team-image,  .about-image {
+    display: none;
+  }
+  .main-content {
+    justify-content: center!important;
+  }
+  .f-73 {
+    font-size: 46px;
+  }
+  .title  {
+    font-size: 56px;
+    line-height: 76px;
+  }
+}
+.nft-img-container {
+  margin: auto;
+}
+.menu-icon {
+  display: none!important;
+}
+@media (max-width: 768px) {
+  .main-content {
+    padding: 20px;
+  }
+  .top-bar {
+    padding: 40px 20px 30px 20px;
+  }
+  .f-40 {
+    font-size: 26px;
+  }
+  .welcome-text {
+    font-size: 56px;
+    line-height: 65px
+  }
+  .norida-text {
+   font-size: 66px; 
+   line-height: 75px
+  }
+  .menus {
+    display: none!important;
+  }
+  .vertical-line {
+    display: none!important;
+  }
+  .footer-item {
+    padding: 10px 0px;
+  }
+  .menu-icon {
+    display: block!important;
+  }
+  .nft-content {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 576px) {
+  .main-content {
+    padding: 5px;
+  }
+  .top-bar {
+    padding: 30px 5px 20px 5px;
+  }
+  .welcome-text {
+    font-size: 36px;
+    line-height: 45px
+  }
+  .norida-text {
+   font-size: 46px; 
+   line-height: 54px
+  }
+  .home-image {
+    width: 150%;
+    left: 0px;
+    transform: translate(-20%, 0px);
+  }
+}
+
+.menu-list {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 80vw;
+  background-color: #2e2e2e;
+  z-index: 9999;
+  padding: 30px 20px;
+  color: white!important;
+}
+.menu-list .btn {
+  color: white!important;
+}
+.menu-list .btn-join {
+  border: 1px solid white;
+  border-radius: 0px 0px 15px 15px;
+  padding: 15px 10px;
+  color: white;
+  background: initial;
 }

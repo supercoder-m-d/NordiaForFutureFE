@@ -85,8 +85,8 @@ const NFT = (props) => {
                 className="mySwiper2"
             >
                 <SwiperSlide>
-                    <div className='d-flex w-100 nft-common nft'>
-                        <div className='d-flex align-items-end'>
+                    <div className='d-flex flex-wrap flex-md-nowrap nft-common nft'>
+                        <div className='d-flex justify-content-center align-items-end nft-img-container '>
                             <img src={NFTCOMMON} className='nft-item' alt='nft-item'/>
                         </div>
                         <div className='ps-2 flex-fill nft-content'>
@@ -98,8 +98,8 @@ const NFT = (props) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='d-flex w-100 nft-medic nft'>
-                        <div className='d-flex align-items-end'>
+                    <div className='d-flex flex-wrap flex-md-nowrap nft-medic nft'>
+                        <div className='d-flex justify-content-center align-items-end nft-img-container '>
                             <img src={NFTMEDIC} alt='nft-item'/>
                         </div>
                         <div className='ps-2 flex-fill nft-content'>
@@ -111,8 +111,8 @@ const NFT = (props) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='d-flex w-100 nft-engineer nft'>
-                        <div className='d-flex align-items-end'>
+                    <div className='d-flex flex-wrap flex-md-nowrap nft-engineer nft'>
+                        <div className='d-flex justify-content-center align-items-end nft-img-container '>
                             <img src={NFTENGINEER} alt='nft-item'/>
                         </div>
                         <div className='ps-2 flex-fill nft-content'>
@@ -124,8 +124,8 @@ const NFT = (props) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='d-flex w-100 nft-scientists nft'>
-                        <div className='d-flex align-items-end'>
+                    <div className='d-flex flex-wrap flex-md-nowrap nft-scientists nft'>
+                        <div className='d-flex justify-content-center align-items-end nft-img-container '>
                             <img src={NFTSCIENTIST} alt='nft-item'/>
                         </div>
                         <div className='ps-2 flex-fill nft-content'>
@@ -137,8 +137,8 @@ const NFT = (props) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='d-flex w-100 nft-soilder nft'>
-                        <div className='d-flex align-items-end'>
+                    <div className='d-flex flex-wrap flex-md-nowrap nft-soilder nft'>
+                        <div className='d-flex justify-content-center align-items-end nft-img-container '>
                             <img src={NFTSoilder} alt='nft-item'/>
                         </div>
                         <div className='ps-2 flex-fill nft-content'>
@@ -150,8 +150,8 @@ const NFT = (props) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='d-flex w-100 nft-commander nft'>
-                        <div className='d-flex align-items-end'>
+                    <div className='d-flex flex-wrap flex-md-nowrap nft-commander nft'>
+                        <div className='d-flex justify-content-center align-items-end nft-img-container '>
                             <img src={NFTCOMMANDER} alt='nft-item'/>
                         </div>
                         <div className='ps-2 flex-fill nft-content'>

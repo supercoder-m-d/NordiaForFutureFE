@@ -6,6 +6,9 @@ import PropTypes from 'prop-types'
 import NavBar from '../components/navbar';
 
 const Layout = ({component:Component, ...props}) => {
+
+    
+
     return (
         <>
             <NavBar className='dark'/>
