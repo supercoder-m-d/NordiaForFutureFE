@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React from 'react';
 // import "./home.css";
 
 const Team = (props) => {
@@ -39,7 +39,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/twticon-dark.png'} alt='link-icon'/>hadidhakan</div>
                                 <div className='px-2 py-2'>
-                                    He created the entire content of the Nordia For Future Ecosystem, the roadmap.
+                                He created the entire content of the Nordia For Future Ecosystem and the roadmap. 
                                 <br/>
                                     He continues to build the future.
                                 </div>
@@ -59,7 +59,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/igicon-dark.png'} alt='link-icon'/>ensar.bos81</div>
                                 <div className='px-2 py-2'>
-                                He carried out the promotion of Nordia For Future, the management and upgrading of the community. 
+                                He not only carried out the promotion of Nordia For Future, but also took care of the management and building the community. 
                                 <br/>
                                 He is unique in his work.
                                 </div>
@@ -81,9 +81,8 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/inicon-dark.png'} alt='link-icon'/>hazaldemir1001</div>
                                 <div className='px-2 py-2'>
-                                She himself created the game fiction. At the same time, he directed the fashion for nordias in the project.
-
-                                <br/>He is currently designing Nordias in 3d.
+                                She created the game fiction by herself and at the same time she directed the fashion for nordias in the project. 
+                                <br/>She is currently designing Nordias in 3d.
                                 </div>
                             </div>
                         </div>
@@ -101,9 +100,9 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/twticon-dark.png'} alt='link-icon'/>kaanmtinn</div>
                                 <div className='px-2 py-2'>
-                                He carried out the promotion of Nordia For Future, the management and upgrading of the community. 
+                                He played a leading role in the creation of the team.  
 
-                                <br/>He is unique in his work.
+                                <br/>He can enchant you with a short speech.
                                 </div>
                             </div>
                         </div>
@@ -122,7 +121,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/igicon-dark.png'} alt='link-icon'/>balperr</div>
                                 <div className='px-2 py-2'>
-                                He performs the partnership and moderator management perfectly.
+                                He deals with the partnerships and moderator management. He did an incredible job. 
                                 </div>
                             </div>
                         </div>
@@ -141,7 +140,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/twticon-dark.png'} alt='link-icon'/>derooniika</div>
                                 <div className='px-2 py-2'>
-                                She's responsible for all the visuals you see. The content manager.
+                                She is the content manager; she is responsible for all of the visuals you see. 
                                 </div>
                             </div>
                         </div>
@@ -162,7 +161,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/igicon-dark.png'} alt='link-icon'/>_busepehlivan_/</div>
                                 <div className='px-2 py-2'>
-                                She's in charge of the undergarments of the Nordians. She has a huge share in their fashion.
+                                She's in charge of the underclothes of the Nordias. She contributed huge in their fashion.
                                 </div>
                             </div>
                         </div>
@@ -180,7 +179,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/azicon-dark.png'} alt='link-icon'/>ceydamuti</div>
                                 <div className='px-2 py-2'>
-                                She formed the top clothing fashion of the Nordians. Different and beautiful designs adorn the Nordias.
+                                She created the top clothing fashion of the Nordias. Different and beautiful designs adorn the Nordias.
                                 </div>
                             </div>
                         </div>
@@ -199,7 +198,7 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/discordicon-dark.png'} alt='link-icon'/>Nordia For Future</div>
                                 <div className='px-2 py-2'>
-                                Responsible for the happiness and safety of my unique community. Don't worry, he also spends time playing sports.
+                                He is responsible for the happiness and safety of our community. Don't worry, he also spends time outside.
                                 </div>
                             </div>
                         </div>
@@ -218,8 +217,8 @@ We will build the future together. Nordia needs every single member. We will exp
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/inicon-dark.png'} alt='link-icon'/>duyguymmz</div>
                                 <div className='px-2 py-2'>
-                                She himself designed the Nordias in the closest way to people with a unique work.
-They also design the characters and bodies of the leaders. Even we can't distinguish it as a brand.
+                                She designed the Nordias very similar to people thanks to her outstanding work. 
+                                She also designed  the characters and bodies of the leaders. Nordias are hard to discern from people even for us. 
                                 </div>
                             </div>
                         </div>
@@ -240,7 +239,7 @@ They also design the characters and bodies of the leaders. Even we can't disting
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/inicon-dark.png'} alt='link-icon'/>sevgiduymaz</div>
                                 <div className='px-2 py-2'>
-                                She forms the most important link between you and the Nordia Universe.
+                                She is the most essential bridge between you and the Nordia Universe.
                                 </div>
                             </div>
                         </div>
@@ -258,7 +257,7 @@ They also design the characters and bodies of the leaders. Even we can't disting
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/igicon-dark.png'} alt='link-icon'/>theguyobsessedwithbikes/</div>
                                 <div className='px-2 py-2'>
-                                She formed the top clothing fashion of the Nordians. Different and beautiful designs adorn the Nordias.
+                                He was responsible of the Nordias’ top clothing fashion. He lend color to Nordias with various and lovely designs. 
                                 </div>
                             </div>
                         </div>
@@ -277,8 +276,8 @@ They also design the characters and bodies of the leaders. Even we can't disting
                             <div className='member-detail px-1'>
                                 <div className='member-link d-flex justify-content-center align-items-center'><img className='pe-1' src={'/images/inicon-dark.png'} alt='link-icon'/>gamze-çolakoğlu-/</div>
                                 <div className='px-2 py-2'>
-                                The leaders are Main Nordia and the unique designer responsible for the top outfits of all the others.
-We are so lucky to have her with us.
+                                She was in charge of the top outfits for all of the Nordias and also, she created the leaders and Main Nordia.
+                                We are so lucky to have her with us.
                                 </div>
                             </div>
                         </div>

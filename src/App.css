@@ -224,7 +224,7 @@ border: 9px solid #00E3E3;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 850px;
+  height: 500px;
   width: 850px;
 }
 .leader-item img {
@@ -278,6 +278,7 @@ border: 9px solid #00E3E3;
 .home-image {
   right: 0px;
   bottom: 0px;
+  width:50%;
   z-index: -1;
 }
 .about-image {
@@ -290,7 +291,7 @@ border: 9px solid #00E3E3;
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
-  line-height: 101px;
+  line-height: 71px;
   letter-spacing: 0.545em;
   text-transform: uppercase;
 
@@ -301,7 +302,7 @@ border: 9px solid #00E3E3;
   font-style: normal;
   font-weight: 400;
   font-size: 110px;
-  line-height: 173px;
+  line-height: 133px;
   letter-spacing: 0.54em;
 
   color: #FFFFFF;
@@ -354,7 +355,7 @@ border: 9px solid #00E3E3;
   height: 210px;
 }
 .member-role {
-  font-family: 'Prompt';
+  font-family: 'Roboto';
 font-style: normal;
 font-weight: 300;
 font-size: 10px;
@@ -366,7 +367,7 @@ text-transform: uppercase;
   background-color: black;
   border: 1px solid #000000;
   color: white;
-  font-family: 'Prompt';
+  font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
 font-size: 10px;
@@ -504,17 +505,21 @@ text-transform: uppercase;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 20px;
 padding: 15px;
+z-index: 9998;
+/* height: 700px; */
 }
 .btn-rm-close {
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 9999;
 }
 .popup-title {
   font-family: 'Saira Stencil One';
 font-style: normal;
 font-weight: 400;
 font-size: 48px;
+padding-left: 20px;
 line-height: 76px;
 /* identical to box height */
 
@@ -524,6 +529,7 @@ text-transform: uppercase;
   font-family: 'Roboto Mono';
 font-style: normal;
 font-weight: 300;
+padding-left: 20px;
 font-size: 24px;
 line-height: 32px;
 text-align: justify;
@@ -601,6 +607,19 @@ color: white;
 .menu-icon {
   display: none!important;
 }
+.rm-vpopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+padding: 15px;
+z-index: 9998;
+  
+}
 @media (max-width: 768px) {
   .main-content {
     padding: 20px;
@@ -634,6 +653,13 @@ color: white;
   .nft-content {
     padding: 10px 10px;
   }
+  .rm-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+  }
 }
 @media (max-width: 576px) {
   .main-content {
@@ -643,17 +669,27 @@ color: white;
     padding: 30px 5px 20px 5px;
   }
   .welcome-text {
-    font-size: 36px;
+    font-size: 43px;
     line-height: 45px
   }
   .norida-text {
-   font-size: 46px; 
+   font-size: 53px; 
    line-height: 54px
   }
   .home-image {
     width: 150%;
     left: 0px;
+    display: none;
     transform: translate(-20%, 0px);
+  }
+  .saira-stencil-main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .home-subtitle1{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
 

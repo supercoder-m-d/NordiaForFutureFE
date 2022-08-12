@@ -1,13 +1,11 @@
-import React, {useCallback, useEffect, useState} from 'react';
-import { BrowserView, MobileView } from 'react-device-detect';
+import React, { useState} from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 
-import LOGO from '../images/logo.png';
 const NavBar = (props) => {    
     const history = useHistory();
     const location = useLocation();
     const [menu, setMenu] = useState(false);
-    const isDark = (location.pathname == '/about' || location.pathname == '/team' || location.pathname == '/roadmap' || location.pathname == '/nft')? false: true;
+    const isDark = (location.pathname === '/about' || location.pathname === '/team' || location.pathname === '/roadmap' || location.pathname === '/nft')? false: true;
 
     const home = () => {
         history.push('/');
@@ -27,6 +25,9 @@ const NavBar = (props) => {
     const showMenu = () => {
         setMenu(true);
     }
+    const join = () => {
+        window.open("https://discord.gg/5h2Em3Nh", "_blank")
+    }
 
     return (
         <div className={`d-flex justify-content-between top-bar align-items-center w-100 roboto ${!!isDark? 'dark': ''}`}>
@@ -39,7 +40,7 @@ const NavBar = (props) => {
                 <div className='btn tp-ag f-16' onClick={about}>ABOUT</div>
                 <div className='btn tp-ag f-16' onClick={nft}>NFT</div>
                 <div className='btn tp-ag f-16' onClick={roadmap}>ROADMAP</div>
-                <div className='btn btn-join f-14'>
+                <div className='btn btn-join f-14' onClick={join}>
                     <img src="/images/world.png" width={'15px'} height={'15px'} style={{marginTop: '2px', marginRight: '5px'}} alt='join-icon'/>JOIN US</div>
             </div>     
             <div className='btn menu-icon' onClick={showMenu}>
@@ -54,7 +55,7 @@ const NavBar = (props) => {
                     <div className='btn tp-ag f-16 my-2' onClick={about}>ABOUT</div>
                     <div className='btn tp-ag f-16 my-2' onClick={nft}>NFT</div>
                     <div className='btn tp-ag f-16 my-2' onClick={roadmap}>ROADMAP</div>
-                    <div className='btn btn-join f-14 my-2'>
+                    <div className='btn btn-join f-14 my-2' onClick={join}>
                         <img src="/images/world.png" width={'15px'} height={'15px'} style={{marginTop: '2px', marginRight: '5px'}} alt='join-icon'/>JOIN US
                     </div>
                     

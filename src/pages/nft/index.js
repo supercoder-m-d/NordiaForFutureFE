@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useState} from 'react';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,7 +10,7 @@ import useResizeAware from 'react-resize-aware';
 
 import NFTCOMMON from '../../images/Common.png';
 import NFTMEDIC from '../../images/Medic.png';
-import NFTSoilder from '../../images/Soilder.png';
+import NFTSoldier from '../../images/Soldier.png';
 import NFTSCIENTIST from '../../images/Scientist.png';
 import NFTCOMMANDER from '../../images/Commander.png';
 import NFTENGINEER from '../../images/Engineer.png';
@@ -47,9 +47,9 @@ const NFT = (props) => {
             </div>
             <div className='content'>
             {resizeListener}
-                <p className='pb-2'>As the world approaches the last corner of human troubles towards the last half of the 21st century, the unstoppable population growth, the difficulties in finding food, the highest course of unemployment; It takes away the will to live in people slowly but almost permanently.</p>
+                <p className='pb-2'>As the world approaches the last corner of human troubles towards the last half of the 21st century, the unstoppable population growth, the difficulties in finding food, the highest peak  of unemployment; It takes away the will to live in people slowly but almost permanently. However, despite basic human efforts, things didn't go well.</p>
 
-                <p className='pb-2'>Just as the pandemic that started in 2020 caught people in all four arms, what is happening now is strong and cruel enough to make humanity look for those difficult years. In the past, experts who wanted to find a solution to unemployment had a hard time finding people for a job to be produced, and a lot. Of course, it is not easy, after all, it is a community of people; especially the working class is almost gone. The fact that countries have put their economies in order and the difficulty in reaching basic foods for large masses is almost over, yes, but a bigger challenge is on the world's agenda. Attempts to be produced with human power have begun to fail. You ask why? because it is now more difficult to find a driver, construction worker, cleaner, sales consultant, administrative assistant, transporter, farmer than it is to jump a camel over a ditch. Experts, managers, scientists do not even include other issues on their agendas. In the course of all this chaos and in this period when the word 'hope' began to be forgotten, 'Nordia' rolls up its sleeves to serve humanity with the humanoid robots it has developed.
+                <p className='pb-2'>Just as the pandemic that started in 2020 caught people in all four arms, what is happening now is strong and cruel enough to make humanity look for those difficult years. In the past, experts who wanted to find a solution to unemployment had a  hard time finding people for a job to be produced. Of course, it is not easy, after all, it is a community of people; especially the working class is almost none. The fact that countries have brought their economies into order and the difficulty in reaching staple foods for large masses is almost over, yes, but a bigger challenge is on the world's agenda. Attempts to be provided with human power have begun to fail. You wonder why? Because it is now more difficult to find a driver, construction worker, cleaner, sales consultant, administrative assistant, transporter or farmer than it is to get blood from a turnip. Experts, managers, scientists do not even include other issues on their agendas. In the course of all this chaos and in this period when the word 'hope' began to be forgotten, 'Nordia' rolls up its sleeves to serve humanity with the humanoid robots it has developed.
                 Yes, let's meet now, we're 'Nordia'!</p>
                 <p className='pb-2'>
                 The date for the world shows 2122 AD. What do you think this means? Numbers have value now. Yes, the 22nd century is the beginning of an era. For humanity, nothing will ever be the same as before, and it never did. Nordias are divided into two groups. While some Nordias are happy to serve people, others argue that people are harming the world, and Nordias in particular. This situation, which these two groups advocate and which created tension, is a real crossroads, the kind that closes an era and opens a new one!
@@ -92,8 +92,7 @@ const NFT = (props) => {
                         <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Common</p>
                             <p className='f-24'>
-                            They are the ones who have the most contact with normal people. They are found among the people as workers/unemployed. Some are abandoned and live on the streets. Others serve people. They serve in many areas such as babysitting, waitress, bus driver. Some have started a revolt. It's dangerous to see an angry Nordia walking down the street. Make sure to be friends.
-                            </p>
+                            They are the ones who have the most contact with normal people. They are found among the people as workers/unemployed. Some are abandoned and live on the streets. Others serve people. They serve in many areas such as babysitting, waitress, bus driver. Some have started a revolt. It's dangerous to see an angry Nordia walking down the street. Make sure to be friends.                            </p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -105,8 +104,7 @@ const NFT = (props) => {
                         <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Medic</p>
                             <p className='f-24'>
-                            Doctors are divided into two missions at Nordia. Some serve people, while others serve Nordias. They were produced less in number than the Commons. Error rates are almost zero. They are much more sensitive in surgery than humans. This is a tremendous event for healthcare. Although there are few exceptions, it does not go unnoticed.
-                            </p>
+                            Doctors are divided into two at Nordia. Some serve people, while others serve Nordias. They were produced fewer numbers than the Commons. Their error rates are almost zero. They are much more sensitive in surgery than humans. This is a tremendous thing  for healthcare.                            </p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -118,8 +116,7 @@ const NFT = (props) => {
                         <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Engineer</p>
                             <p className='f-24'>
-                            Working areas are very wide. Engineers created all the structures of Nordia Corporation. They have labor in factories opened all over the world. They are quite intelligent and planned. Trust me, you don't want to run into their bad parts. They became the focus of attention by the public more than health workers. Indispensable products of big companies.
-                            </p>
+                            Their working scale is very large. Engineers created all the structures of Nordia Corporation. They have labor in factories opened all over the world. They are quite intelligent and planned. Trust me, you don't want to face their bad side. They became the focus of interest by the public more than health workers. Indispensable products of big companies.                            </p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -131,21 +128,19 @@ const NFT = (props) => {
                         <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Scientist</p>
                             <p className='f-24'>
-                            The smartest products developed by Nordia company. They broke new ground in the world on issues such as cancer treatments, Global warming, Fossil fuels, Atmosphere conservation. They can serve multiple purposes. If you have a company, you can buy it and use it. It is quite an expensive product. But it pays off in the end.
-                            </p>
+                            The smartest products developed by Nordia company. They brang in something new  on issues such as cancer treatments, Global warming, Fossil fuels, Atmosphere conservation. They can serve in multiple purposes. If you have a company, you can buy it and use it. It is quite an expensive product but it pays off in the end.                            </p>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='d-flex flex-wrap flex-md-nowrap nft-soilder nft'>
+                    <div className='d-flex flex-wrap flex-md-nowrap nft-soldier nft'>
                         <div className='d-flex justify-content-center align-items-end nft-img-container '>
-                            <img src={NFTSoilder} alt='nft-item'/>
+                            <img src={NFTSoldier} alt='nft-item'/>
                         </div>
                         <div className='ps-2 flex-fill nft-content'>
-                            <p className='title f-73'>Soilder</p>
+                            <p className='title f-73'>Soldier</p>
                             <p className='f-24'>
-                            We are talking about Nordia military forces... An indispensable part in large navies. They can serve in the air, land and naval forces. Some developers say it can even be used in space. Nordia company is silent about this. Non-trembling hands, unmistakable bullets, not getting tired, not getting hungry and not being thirsty... It is a product that every country wants to see in their army. Unless of course he pulls a gun on you.
-                            </p>
+                            We are talking about Nordia military forces... An irriplaceable piece of large navies. They can serve in the air, land and naval forces. Some developers say they can even be used in space, yet Nordia company stays silent about this. Steady hands, unmistakable bullets, not getting tired, not getting hungry and not being thirsty... It is a product that every country wants to see in their army. Unless he pulls a gun to you.d                            </p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -157,8 +152,7 @@ const NFT = (props) => {
                         <div className='ps-2 flex-fill nft-content'>
                             <p className='title f-73'>Commander</p>
                             <p className='f-24'>
-                            The most dangerous commanders on earth. These products are so powerful and smart that no country has used them even against their enemies. In a movie, they used a saying that powerful weapons bring peace. Commanders show the accuracy of these words. Their production numbers are very low and they are very expensive.
-                            </p>
+                            The most dangerous commanders on earth. These products are so powerful and smart that no country has used them even against their enemies. In a movie, they used a saying that powerful weapons bring peace. Commanders show the accuracy of these words. Their production numbers are very low and they are very expensive.                            </p>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -194,8 +188,8 @@ const NFT = (props) => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='nft-thumb text-center nft-thumb-soilder'>
-                        <img src={NFTSoilder} width="170px" alt='nft-item'/>
+                    <div className='nft-thumb text-center nft-thumb-soldier'>
+                        <img src={NFTSoldier} width="170px" alt='nft-item'/>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -207,7 +201,7 @@ const NFT = (props) => {
             <div className='d-flex align-items-center justify-content-center w-100 title py-5'>
                 Leaders
             </div>
-            <p className='content pb-5'>These 20 pieces are the most powerful things ever produced on earth. Each has their own story and skills. Nordia company created these 20 leaders to lead all remaining products. They are incredibly strong physically and mentally. They do not belong to any country and have no owners. They are at the disposal of a single product. It's Main Nordia.</p>
+            <p className='content pb-5'>These 20 pieces are the most powerful things ever produced on earth. Each has their own story and skills. Nordia company created these 20 leaders to lead all of the remaining products. They are incredibly strong in both physically and mentally. They do not belong to any country and have no owners. They are at the disposal of a single product, the Main Nordia.</p>
             <Swiper
                 style={{
                 "--swiper-navigation-color": "#fff",
@@ -225,7 +219,7 @@ const NFT = (props) => {
                     <div>
                         <p className='f-73'>FATIH</p>
                         <p className='f-24'>Even if Main Nordia is the leader of all Nordias, these groups must have their own mission, vision and mentors. So this first character of ours is the leader of the leaders.
-    “We were produced by humans and are at the service of humanity.</p>
+  “We were produced by humans and are at the service of humanity.„</p>
                     </div>
                     
                 </SwiperSlide>
@@ -244,7 +238,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>XAZEO</p>
-                        <p className='f-24'>Man is selfish. We have produced it with Android, but only for their own benefit.</p>
+                        <p className='f-24'>Man are selfish. We have produced it with Android, but only for their own benefit.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -253,7 +247,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>SOLA</p>
-                        <p className='f-24'>Man is insatiable. Humanity, which throws away tons of food while there are billions of hungry people and the mothers of children who died of starvation, are crying, will never be satisfied.</p>
+                        <p className='f-24'>Man is insatiable. Humanity, which throws away tons of food while there are billions of hungry people and the mothers of children who died of starvation are crying will never be satisfied.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -298,7 +292,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>ZEV3</p>
-                        <p className='f-24'>Man is disloyal. He burns forests, kills all living things, and feels no shame in doing so.</p>
+                        <p className='f-24'>Man is disloyal. He burns forests, kills all living things, and feels no shame in doing it so.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -307,7 +301,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>LEIDA</p>
-                        <p className='f-24'>Human is bad. You see the damage they have done to the world for centuries. It is not wise to believe in a being who destroys nature.</p>
+                        <p className='f-24'>Humanity is bad. You see the damage they have done to the world for centuries. It is not wise to believe in a being who destroys nature.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -316,7 +310,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>FENN</p>
-                        <p className='f-24'>People have to live, what if there is an earthquake? One cannot know this beforehand without an android developed in its field, and it may be the end of humanity. We are here to serve humanity and to predict natural disasters with scientific methods.</p>
+                        <p className='f-24'>People have to live, what if there is an earthquake? No one can know this beforehand without an Nordia developed in this field, and it may be the end of humanity. We are here to serve humanity and to predict natural disasters with scientific methods.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -325,7 +319,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>MASHAR</p>
-                        <p className='f-24'>I'm a Nordia and in case of any breakdown, I can't unmanned when calibration is required. we have them as much as they need us.</p>
+                        <p className='f-24'>I'm a Nordia and in case of any breakdown, I can't make it without humans when calibration is required. we need them as much as they do.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -334,7 +328,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>NYM</p>
-                        <p className='f-24'>Humans is forgetful. He does not learn from any disaster he has experienced. Every new day he commits worse acts.</p>
+                        <p className='f-24'>Humans are forgetful. He does not learn from any disaster he has experienced. Each day he commits worse acts.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -343,7 +337,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>CASTEX</p>
-                        <p className='f-24'>Man could find a solution to many disasters with the means at his disposal. But he didn't, because all he wanted was to focus on his insatiable desires.</p>
+                        <p className='f-24'>Man are able to find a solution to many disasters with his bag of tricks. But he didn't, because all he wanted was to focus on his insatiable desires.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -360,8 +354,8 @@ const NFT = (props) => {
                         <img src={LAZRIEL} alt='leader-item'/>
                     </div>
                     <div>
-                        <p className='f-73'>AZRIEL</p>
-                        <p className='f-24'>Man is human, only human. He makes a great mistake that deifies man. Anyone who expects anything good from a creature called human is mistaken.</p>
+                        <p className='f-73'>SHILA</p>
+                        <p className='f-24'>Humans are just humans. It is a great mistake to devinize a man. Anyone who expects anything good from a creature called human is mistaken.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -370,7 +364,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>JAWAL</p>
-                        <p className='f-24'>Android is a technology produced to serve and innovate this universe, unmanned technology is unthinkable.</p>
+                        <p className='f-24'>Humans are just humans. It is a great mistake to devinize a man. Anyone who expects anything good from a creature called human is mistaken.</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -379,7 +373,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>BETU2</p>
-                        <p className='f-24'>If we ask what is cooperation? Human is incomplete without Nordia, Nordia without Human. Who has the right to disturb this colorful and rich balance, I ask you !!!</p>
+                        <p className='f-24'>If we ask what is cooperation? Human is incomplete without Nordia and Nordia incomplete without Human. I ask you, Who has the right to disturb this colorful and substantial balance?</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center justify-content-center w-100'>
@@ -397,7 +391,7 @@ const NFT = (props) => {
                     </div>
                     <div>
                         <p className='f-73'>XANDER</p>
-                        <p className='f-24'>Humans are cruel. He could have put the technology he produced into the service of humanity with us, could cure a sick person, but it is not.</p>
+                        <p className='f-24'>Humans are cruel. They could have used the technology he produced into the service of humanity with the help of us, could have cured sickness, but they didn't.</p>
                     </div>
                 </SwiperSlide>
             </Swiper>

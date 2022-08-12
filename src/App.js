@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Route, Switch, Redirect, BrowserRouter } from 'react-router-dom';
+import {Switch, BrowserRouter } from 'react-router-dom';
 
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
