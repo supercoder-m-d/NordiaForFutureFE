@@ -126,6 +126,7 @@ text-align: justify;
 }
 .main-content {
   padding: 0px 50px;
+  /* padding-bottom: 200px; */
 }
 .saira-stencil-one {
   font-family: 'Saira Stencil One';
@@ -260,8 +261,20 @@ border: 9px solid #00E3E3;
   top: 0;
   bottom: 0;
 }
-.home-bg {
-  background-image: url('./images/bgNew.png');
+.wear2earn-bg {
+  background-size: cover;
+  background-position: left;
+  background-image: url('./images/wear2earn_bg.png');
+}
+.token-bg {
+  background-size: cover;
+  background-position: right;
+  background-image: url('./images/token_bg.png');
+}
+.backers-bg {
+  background-size: cover;
+  background-position: center;
+  background-image: url('./images/backers_bg.png');
 }
 .team-bg {
   background-image: url('./images/teamBg.png');
@@ -292,7 +305,7 @@ border: 9px solid #00E3E3;
   font-weight: 400;
   font-size: 64px;
   line-height: 71px;
-  letter-spacing: 0.545em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
 
   color: #FFFFFF;
@@ -303,7 +316,7 @@ border: 9px solid #00E3E3;
   font-weight: 400;
   font-size: 110px;
   line-height: 133px;
-  letter-spacing: 0.54em;
+  letter-spacing: 0.20em;
 
   color: #FFFFFF;
 
@@ -327,6 +340,8 @@ border: 9px solid #00E3E3;
   bottom: 0;
   left: 0;
   right: 0;
+  height: 148px;
+  z-index: 5;
 }
 .footer-item {
   min-width: 150px;
@@ -620,6 +635,27 @@ padding: 15px;
 z-index: 9998;
   
 }
+.wear-title {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75px;
+}
+.wear-desc {
+  max-width: 600px;
+}
+.token-text {
+  font-family: 'Saira Stencil One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 98px;
+  line-height: 100px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
 @media (max-width: 768px) {
   .main-content {
     padding: 20px;
@@ -634,6 +670,10 @@ z-index: 9998;
     font-size: 56px;
     line-height: 65px
   }
+  .token-text {
+    font-size: 56px;
+    line-height: 65px;
+  }
   .norida-text {
    font-size: 66px; 
    line-height: 75px
@@ -643,6 +683,9 @@ z-index: 9998;
   }
   .vertical-line {
     display: none!important;
+  }
+  .footer {
+    height: auto;
   }
   .footer-item {
     padding: 10px 0px;
@@ -660,6 +703,13 @@ z-index: 9998;
     right: 0;
     bottom:0;
   }
+  .wear-title {
+    font-family: 'Saira Stencil One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+  }
 }
 @media (max-width: 576px) {
   .main-content {
@@ -676,6 +726,10 @@ z-index: 9998;
    font-size: 53px; 
    line-height: 54px
   }
+  .token-text {
+    font-size: 40px;
+    line-height: 43px;
+  }
   .home-image {
     width: 150%;
     left: 0px;
@@ -690,6 +744,18 @@ z-index: 9998;
     justify-content: center;
     text-align: center;
     width: 100%;
+  }
+  .wear-title {
+    font-family: 'Saira Stencil One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .wear-desc {
+    font-size: 18px;
+    line-height: 24px;
+    text-shadow: 2px 1px 3px black;
   }
 }
 
@@ -713,4 +779,28 @@ z-index: 9998;
   padding: 15px 10px;
   color: white;
   background: initial;
+}
+/* .mySwiper {
+  position: inherit!important;
+}
+.mySwiper .swiper-wrapper {
+  position: inherit!important;
+}
+.mySwiper .swiper-slide {
+  position: inherit!important;
+} */
+.blue-ribbon {
+  background-color: #4500FF;
+  border-radius: 60px 0 0 60px;
+  padding: 0px 40px;
+}
+.btn-paper {
+  background-color: #111352;
+  border-radius: 20px;
+  min-width: 200px;
+}
+.btn-community {
+  background-color: #242F69;
+  border-radius: 20px;
+  min-width: 200px;
 }

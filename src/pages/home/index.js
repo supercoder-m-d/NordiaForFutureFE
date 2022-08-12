@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
 import { useHistory } from 'react-router-dom';
 import { isMobile } from 'web3modal';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+import { Autoplay } from "swiper";
 // import "./home.css";
 
 const Home = (props) => {
@@ -9,12 +15,78 @@ const Home = (props) => {
     const goToTeam = () => {
         history.push('/team');
     }
+    const whitePaper = () => {
+
+    }
+    const joinCommunity = () => {
+        window.open("https://discord.gg/5h2Em3Nh", "_blank")
+    }
     const [vPopup, setVpopup] = useState(false);
+    const onSlideChange = (e) => {
+        if (e.activeIndex == 1 || e.activeIndex == 4) {
+            
+            document.getElementsByClassName('background')[0].setAttribute("class", 'background wear2earn-bg');
+        } else if (e.activeIndex == 2) {
+            document.getElementsByClassName('background')[0].setAttribute("class", 'background token-bg');
+        } else {
+            document.getElementsByClassName('background')[0].setAttribute("class", 'background backers-bg');
+        }
+    }
     return (
         <>
-            <div className={`roboto-mono main-content`}>
-                <div className={`background home-bg`}></div>
-                <img
+            <div className={`roboto-mono main-content`} style={{marginTop: '-50px'}}>
+            <div className={`background wear2earn-bg`}></div>
+            <Swiper
+                className="mySwiper"
+                onSlideChange={onSlideChange}
+                loop
+                // autoplay={{
+                //     delay: 5000,
+                //     disableOnInteraction: false,
+                // }}
+                modules={[Autoplay]}
+            >
+                <SwiperSlide className='d-flex flex-column align-items-end'>
+                    <div className='welcome-text text-end'>WEAR AND EARN</div>
+                    <div className='welcome-text text-end'>WITH</div>
+                    <div className='norida-text text-end'>NORDIA!</div>
+                    <div className='blue-ribbon wear-title'>Wear 2 Earn</div>
+                    <div className='pt-3 text-end f-24 wear-desc'>
+                    WE CREATED THE WORLD'S FIRST W2E CONCEPT. IT'S EASY, OWN THE T-SHIRT,
+HAVE YOUR FRIENDS AROUND YOU
+READ THE QR CODE ON THE T-SHIRT,
+EARN TOKENS THROUGH THE APP.
+ONLY THIS!
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='d-flex flex-column align-items-start'>
+                    <div className='token-text text-end'>TOKENS IS</div>
+                    <div className='welcome-text text-end'>ALREADY</div>
+                    <div className='norida-text text-end'>READY!</div>
+                    <div className='pt-3 f-24 wear-desc'>
+                    WITHOUT RELEASING OUR NFT COLLECTION, 
+WE HAVE PREPARED OUR TOKEN CONTRACTS AND PUBLISHED THEM ON THE BSC NETWORK. YOU CAN REVIEW THE TOKENE ECONOMY AND ALL THE FEATURES IN THE WHITEPAPER.
+                    </div>
+                    <div className='pt-3'>
+                        <div className='btn btn-paper me-3 text-white' onClick={whitePaper}>WHITEPAPER</div>
+                        <div className='btn btn-community text-white' onClick={joinCommunity}>JOIN COMMUNITY</div>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide className='d-flex flex-column align-items-center'>
+                    <div className='token-text text-end'>OUR BACKERS</div>
+                    <div className='d-flex flex-wrap justify-content-center py-2 overflow-auto' style={{maxWidth: '900px', maxHeight: '500px'}}>
+                        <img src={'/images/brands/1.png'} alt='brand-img'/>
+                        <img src={'/images/brands/2.png'} alt='brand-img'/>
+                        <img src={'/images/brands/3.png'} alt='brand-img'/>
+                        <img src={'/images/brands/4.png'} alt='brand-img'/>
+                        <img src={'/images/brands/5.png'} alt='brand-img'/>
+                        <img src={'/images/brands/6.png'} alt='brand-img'/>
+                    </div>
+                    <div className='f-24'>AND THE SUPPORT OF MORE THAN A HUNDRED CELEBRITIES!</div>
+                </SwiperSlide>
+            </Swiper>
+            
+                {/* <img
                     className='position-fixed home-image'
                     src={'images/andr1.png'}
                     alt='item'
@@ -34,15 +106,15 @@ const Home = (props) => {
                             alt='arrow-right'
                             />
                     </button>
-                </div>   
-                {vPopup && <div className='rm-vpopup roboto-mono d-flex flex-column align-items-center justify-content-center'>
-                    <div className='btn btn-rm-close' onClick={() => {setVpopup(false);}}> <i class="fas fa-times"></i></div>
+                </div>    */}
+                   
+            </div>
+            {vPopup && <div className='rm-vpopup roboto-mono d-flex flex-column align-items-center justify-content-center'>
+                    <div className='btn btn-rm-close' onClick={() => {setVpopup(false);}}> <i className="fas fa-times"></i></div>
                     <video width="100%" autoPlay={true} loop={true} muted>
                         <source src={`/video/intro.mp4`} type="video/mp4"></source>
                     </video>
-                </div>}     
-            </div>
-
+                </div>}  
             <div className='footer d-flex align-items-center flex-wrap flex-lg-nowrap justify-content-around roboto-mono py-2 py-lg-5'>
                 <div className='footer-item text-center'>
                     <div className="f-40 saira-stencil-one text-white">AUGUST</div>

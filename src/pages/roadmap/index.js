@@ -64,7 +64,7 @@ const RoadMap = (props) => {
                 </div>
             </div>
             {mode !== 0 && <div className='rm-popup roboto-mono d-flex flex-column'>
-                <div className='btn btn-rm-close' onClick={() => {setMode(0);}}> <i class="fas fa-times"></i></div>
+                <div className='btn btn-rm-close' onClick={() => {setMode(0);}}> <i className="fas fa-times"></i></div>
                 <div className='popup-title'>{mode === 1? 'Vision': mode === 2? 'Team & Community': mode === 3? 'NFT launch': mode === 4? 'Token': mode === 5? 'Tangible Works': mode === 6? 'P2E Game':''}</div>
                 <img src={`/images/${imageNames[mode]}`} className='popup-img' alt='popup-img'/>
                 <div className='flex-fill overflow-auto'>
