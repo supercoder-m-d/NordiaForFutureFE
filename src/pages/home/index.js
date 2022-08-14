@@ -38,6 +38,9 @@ const Home = (props) => {
             document.getElementById('homeImg').style.display = 'none';            
         }
     }
+    const join = () => {
+        window.open("https://discord.gg/5h2Em3Nh", "_blank")
+    }
     return (
         <>
             <div className={`roboto-mono main-content`}>
@@ -68,14 +71,17 @@ const Home = (props) => {
                     </div>    
                     <div className='text-white pt-2'>
                         <div className='home-subtitle1 pb-4'>DISCOVER DIGITAL ART AND COLLECT NFTS</div>                    
-                        <button className="text-white home-subtitle1 btn-no-bg" onClick={goToTeam}>LET’S ORBIT         
+                        <button className="text-white home-subtitle1 btn-no-bg ps-0" onClick={goToTeam}>LET’S ORBIT         
                             <img
                                 className='ps-3'
                                 src={'images/arrowRight.png'}
                                 alt='arrow-right'
                                 />
-                        </button>
+                        </button>                        
                     </div> 
+                    <div className='btn f-14 my-2 text-white text-start ps-0' onClick={join}>
+                        <i className="fa-brands fa-discord pe-2"></i>JOIN US
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-end'>
                     <div className='welcome-text text-end'>WEAR AND EARN</div>
