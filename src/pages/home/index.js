@@ -52,10 +52,10 @@ const Home = (props) => {
                 className="mySwiper"
                 onSlideChange={onSlideChange}
                 loop
-                // autoplay={{
-                //     delay: 3000,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
                 modules={[Autoplay]}
             >
                 <SwiperSlide className=''>
