@@ -261,6 +261,11 @@ border: 9px solid #00E3E3;
   top: 0;
   bottom: 0;
 }
+.home-bg {
+  background-size: cover;
+  background-position: left;
+  background-image: url('./images/bgNew.png');
+}
 .wear2earn-bg {
   background-size: cover;
   background-position: left;
@@ -291,8 +296,9 @@ border: 9px solid #00E3E3;
 .home-image {
   right: 0px;
   bottom: 0px;
-  width:50%;
+  /* width:50%; */
   z-index: -1;
+  opacity: 0.8;
 }
 .about-image {
   left: 0px;

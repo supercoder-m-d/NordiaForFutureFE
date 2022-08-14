@@ -45,7 +45,7 @@ const NavBar = (props) => {
                 </div>
             </div>     
             <div className='btn menu-icon' onClick={showMenu}>
-                <i className="fas fa-times"></i>
+                <i className="fas fa-bars"></i>
             </div>      
            {menu && <div className='d-flex flex-column menu-list'>
                     <div className='text-end my-2'>

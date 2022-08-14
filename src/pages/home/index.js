@@ -23,29 +23,60 @@ const Home = (props) => {
     }
     const [vPopup, setVpopup] = useState(false);
     const onSlideChange = (e) => {
-        if (e.activeIndex == 1 || e.activeIndex == 4) {
-            
+        if (e.activeIndex == 1 || e.activeIndex == 5) {
+            document.getElementsByClassName('background')[0].setAttribute("class", 'background home-bg');
+            document.getElementById('homeImg').style.display = 'block';
+        }
+        else if (e.activeIndex == 2) {
+            document.getElementById('homeImg').style.display = 'none';            
             document.getElementsByClassName('background')[0].setAttribute("class", 'background wear2earn-bg');
-        } else if (e.activeIndex == 2) {
+        } else if (e.activeIndex == 3) {
             document.getElementsByClassName('background')[0].setAttribute("class", 'background token-bg');
+            document.getElementById('homeImg').style.display = 'none';            
         } else {
             document.getElementsByClassName('background')[0].setAttribute("class", 'background backers-bg');
+            document.getElementById('homeImg').style.display = 'none';            
         }
     }
     return (
         <>
             <div className={`roboto-mono main-content`} style={{marginTop: '-50px'}}>
-            <div className={`background wear2earn-bg`}></div>
+            <div className={`background home-bg`}></div>
+            <img
+                id='homeImg'
+                className='position-fixed home-image'
+                src={'images/andr1.png'}
+                alt='item'
+            />
             <Swiper
                 className="mySwiper"
                 onSlideChange={onSlideChange}
                 loop
-                // autoplay={{
-                //     delay: 5000,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
                 modules={[Autoplay]}
             >
+                <SwiperSlide className=''>
+                    
+                    <div className='saira-stencil-one saira-stencil-main text-white'>
+                        <div className='welcome-text'>WELCOME</div>
+                        <div className='welcome-text'>TO THE</div>
+                        <div className='norida-text '>NORDIA</div>                    
+
+                    </div>    
+                    <div className='text-white pt-2'>
+                        <div className='home-subtitle1 pb-4'>DISCOVER DIGITAL ART AND COLLECT NFTS</div>                    
+                        <button className="text-white home-subtitle1 btn-no-bg" onClick={goToTeam}>LET’S ORBIT         
+                            <img
+                                className='ps-3'
+                                src={'images/arrowRight.png'}
+                                alt='arrow-right'
+                                />
+                        </button>
+                    </div> 
+                </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-end'>
                     <div className='welcome-text text-end'>WEAR AND EARN</div>
                     <div className='welcome-text text-end'>WITH</div>
@@ -86,28 +117,6 @@ WE HAVE PREPARED OUR TOKEN CONTRACTS AND PUBLISHED THEM ON THE BSC NETWORK. YOU 
                 </SwiperSlide>
             </Swiper>
             
-                {/* <img
-                    className='position-fixed home-image'
-                    src={'images/andr1.png'}
-                    alt='item'
-                />
-                <div className='saira-stencil-one saira-stencil-main text-white'>
-                    <div className='welcome-text'>WELCOME</div>
-                    <div className='welcome-text'>TO THE</div>
-                    <div className='norida-text '>NORDIA</div>                    
-
-                </div>    
-                <div className='text-white pt-2'>
-                    <div className='home-subtitle1 pb-4'>DISCOVER DIGITAL ART AND COLLECT NFTS</div>                    
-                    <button className="text-white home-subtitle1 btn-no-bg" onClick={goToTeam}>LET’S ORBIT         
-                        <img
-                            className='ps-3'
-                            src={'images/arrowRight.png'}
-                            alt='arrow-right'
-                            />
-                    </button>
-                </div>    */}
-                   
             </div>
             {vPopup && <div className='rm-vpopup roboto-mono d-flex flex-column align-items-center justify-content-center'>
                     <div className='btn btn-rm-close' onClick={() => {setVpopup(false);}}> <i className="fas fa-times"></i></div>
