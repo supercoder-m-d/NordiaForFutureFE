@@ -40,7 +40,7 @@ const Home = (props) => {
     }
     return (
         <>
-            <div className={`roboto-mono main-content`} style={{marginTop: '-50px'}}>
+            <div className={`roboto-mono main-content`}>
             <div className={`background home-bg`}></div>
             <img
                 id='homeImg'
@@ -52,10 +52,10 @@ const Home = (props) => {
                 className="mySwiper"
                 onSlideChange={onSlideChange}
                 loop
-                autoplay={{
-                    delay: 3000,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 3000,
+                //     disableOnInteraction: false,
+                // }}
                 modules={[Autoplay]}
             >
                 <SwiperSlide className=''>
@@ -105,15 +105,15 @@ WE HAVE PREPARED OUR TOKEN CONTRACTS AND PUBLISHED THEM ON THE BSC NETWORK. YOU 
                 </SwiperSlide>
                 <SwiperSlide className='d-flex flex-column align-items-center'>
                     <div className='token-text text-end'>OUR BACKERS</div>
-                    <div className='d-flex flex-wrap justify-content-center py-2 overflow-auto' style={{maxWidth: '900px', maxHeight: '500px'}}>
-                        <img src={'/images/brands/1.png'} alt='brand-img'/>
-                        <img src={'/images/brands/2.png'} alt='brand-img'/>
-                        <img src={'/images/brands/3.png'} alt='brand-img'/>
-                        <img src={'/images/brands/4.png'} alt='brand-img'/>
-                        <img src={'/images/brands/5.png'} alt='brand-img'/>
-                        <img src={'/images/brands/6.png'} alt='brand-img'/>
+                    <div className='d-flex flex-wrap justify-content-center py-2 overflow-auto brand-content'>
+                        <img src={'/images/brands/1.png'} alt='brand-img' className='brand-img'/>
+                        <img src={'/images/brands/2.png'} alt='brand-img' className='brand-img'/>
+                        <img src={'/images/brands/3.png'} alt='brand-img' className='brand-img'/>
+                        <img src={'/images/brands/4.png'} alt='brand-img' className='brand-img'/>
+                        <img src={'/images/brands/5.png'} alt='brand-img' className='brand-img'/>
+                        <img src={'/images/brands/6.png'} alt='brand-img' className='brand-img'/>
                     </div>
-                    <div className='f-24'>AND THE SUPPORT OF MORE THAN A HUNDRED CELEBRITIES!</div>
+                    <div className='f-24 text-center'>AND THE SUPPORT OF MORE THAN A HUNDRED CELEBRITIES!</div>
                 </SwiperSlide>
             </Swiper>
             

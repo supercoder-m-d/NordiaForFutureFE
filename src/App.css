@@ -126,7 +126,7 @@ text-align: justify;
 }
 .main-content {
   padding: 0px 50px;
-  /* padding-bottom: 200px; */
+  padding-bottom: 200px!important;
 }
 .saira-stencil-one {
   font-family: 'Saira Stencil One';
@@ -342,12 +342,14 @@ border: 9px solid #00E3E3;
 .footer {
   background: rgba(101, 0, 106, 0.38);
   min-height: 148px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  /* right: 0; */
   height: 148px;
   z-index: 5;
+  width: 100vw;
+  transform: translate(-50%, 0);
 }
 .footer-item {
   min-width: 150px;
@@ -621,6 +623,9 @@ color: white;
     font-size: 56px;
     line-height: 76px;
   }
+  .brand-img {
+    width: 250px;
+  }
 }
 .nft-img-container {
   margin: auto;
@@ -662,9 +667,14 @@ z-index: 9998;
 
   color: #FFFFFF;
 }
+.brand-content {
+  max-width: 900px;
+  /* max-height: 500px; */
+}
 @media (max-width: 768px) {
   .main-content {
     padding: 20px;
+    /* padding-bottom: 250px; */
   }
   .top-bar {
     padding: 40px 20px 30px 20px;
@@ -716,6 +726,12 @@ z-index: 9998;
     font-size: 50px;
     line-height: 65px;
   }
+  .brand-content {
+    max-width: 600px;
+  }
+  .brand-img {
+    width: 200px;
+  }
 }
 @media (max-width: 576px) {
   .main-content {
@@ -763,6 +779,12 @@ z-index: 9998;
     line-height: 24px;
     text-shadow: 2px 1px 3px black;
   }
+  .brand-img {
+    width: 150px;
+  }
+  .brand-content {
+    max-width: 400px;
+  }
 }
 
 .menu-list {
@@ -809,4 +831,10 @@ z-index: 9998;
   background-color: #242F69;
   border-radius: 20px;
   min-width: 200px;
+}
+.swiper-wrapper {
+  align-items: flex-start;
+}
+#root {
+  min-height: 100vh;
 }
