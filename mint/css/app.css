@@ -1,0 +1,56 @@
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/background.png');
+    align-self: auto;
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.logo {
+    width: 500px;
+}
+.white-container {
+    border-radius: 30px;
+    background-color: white;
+}
+.max {
+    background-color: #63ccd3;
+    border-radius: 4px;
+}
+.vertical-split {
+    width: 2px;
+    background-color: rgb(32, 32, 32);
+    height: 30px;
+}
+.btn-connect {
+    background-color: white;
+}
+.warnning {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+body {
+    min-height: 100vh;
+    padding: 20px 0px 70px 0px;
+}
+@media (max-width: 1280px) {
+    .logo {
+        width: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .logo {
+        width: 300px;
+    }
+}
+@media (max-width: 576px) {
+    .logo {
+        width: 200px;
+    }
+}
